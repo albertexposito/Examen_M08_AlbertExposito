@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TEST!"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Correctes: 0"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:id="@+id/TV_correctes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Incorrectes: 0"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:id="@+id/TV_incorrectes" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="pregunta:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quant val 2+2?"
+            android:textSize="30sp"
+            android:id="@+id/TV_pregunta" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Resultat:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:background="@android:color/darker_gray"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/ET_resposta"
+            android:text="0"
+            android:textSize="50dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="SEGUENT PREGUNTA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_confirmar" />
+
+
+</LinearLayout>

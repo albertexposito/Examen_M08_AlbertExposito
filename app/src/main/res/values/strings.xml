@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Examen_M08_AlbertExposito</string>
+    <string name="titol_app">OPERACIONS ARITMÈTIQUES!</string>
+    <string name="introduir_nom">Nom:</string>
+    <string name="hint_introduir_nom">Introdueix el teu nom</string>
+    <string name="tipus_test">Tipus de test:</string>
+    <string name="test_sumes">sumes</string>
+    <string name="test_restes">restes</string>
+    <string name="test_multi">multiplicacions</string>
+    <string name="test_div">divisions</string>
+    <string name="test_general">general</string>
+
+    <string name="num_preguntes_5">5</string>
+    <string name="num_preguntes_10">10</string>
+    <string name="num_preguntes_20">20</string>
+
+    <string name="comencar">COMENCAR TEST</string>
+</resources>

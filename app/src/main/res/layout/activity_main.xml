@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/titol_app"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/introduir_nom"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ET_nomAlumne"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:hint="@string/hint_introduir_nom"
+            android:textSize="20sp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipus de test"
+                android:textAlignment="center"
+                android:textSize="22dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio_sumes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/test_sumes"
+                    android:textSize="18dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_restes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/test_restes"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_multi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/test_multi"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_div"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/test_div"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_general"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/test_general"
+                    android:textSize="18dp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Num preguntes:"
+                android:textSize="22dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_num_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/num_preguntes_5"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_num_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/num_preguntes_10"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_num_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/num_preguntes_20"
+                    android:textSize="18dp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/comencar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_comencar" />
+
+
+</LinearLayout>

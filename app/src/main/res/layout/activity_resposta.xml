@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="HAS ACABAT EL TEST"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Correctes: 0"
+            android:textSize="40sp"
+            android:layout_weight="1"
+            android:id="@+id/TV_correctes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Incorrectes: 0"
+            android:textSize="40sp"
+            android:layout_weight="1"
+            android:id="@+id/TV_incorrectes_repsosta" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="TORNAR AL MENU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_confirmar" />
+
+
+</LinearLayout>
